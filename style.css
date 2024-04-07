@@ -142,27 +142,113 @@ header {
 .products {
   border: rebeccapurple solid;
   padding: 5px;
-  display: flex;
 }
-.products h3 {
+.products-title {
   color: #11835c;
   font-weight: bold;
+  text-align: center;
 }
-.products-top-left {
+
+.products-list-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.products-list-bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  margin-bottom: 25px;
+}
+
+.products-item {
   border: white solid;
   border-radius: 5px;
-  background: white;
+  background: #f2f2f2;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 199px;
+  height: 249px;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px #bfc0c5;
 }
-.products-top-left img {
-  width: 10%;
+
+.products-item-img {
+  display: flex;
+  justify-content: center;
 }
-.products-top-left small {
-  color: #c1c4c4;
+.products-item-img img {
+  width: 100px;
+  padding-top: 8px;
 }
-.products-top-left h5 {
+.products-item small {
+  color: gray;
+}
+.products-item h5 {
   font-weight: bold;
 }
 .fa-star:before {
   content: "\f005";
   color: green;
+}
+.products-item-btn button {
+  color: white;
+  background: #11835c;
+  width: 201px;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.temoignage {
+  background: url(./pictures/background-temoignage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: rebeccapurple solid;
+}
+.temoignage-container {
+  background: #0d0404b0;
+}
+.temoignage h3 {
+  color: white;
+  text-align: center;
+}
+.temoignage-para {
+  color: white;
+  text-align: center;
+  margin: 34px 0px;
+}
+.temoignage-list {
+  padding-left: 170px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+.temoignage-item {
+  background: white;
+  padding-top: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  margin-top: 50px;
+}
+.temoignage-item-title {
+}
+.temoignage-item img {
+  border-radius: 92px;
+  width: 150px;
+  height: 150px;
+}
+
+.temoignage-item-title {
+  color: #11835c;
+  padding: 17px;
+}
+.temoignage-item-text {
+  margin-left: 10px;
+  padding-left: 4px;
+  padding-bottom: 74px;
 }
