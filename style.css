@@ -251,4 +251,18 @@ header {
   margin-left: 10px;
   padding-left: 4px;
   padding-bottom: 74px;
+  text-align: justify;
+}
+
+.text-and-icon {
+  border: rebeccapurple solid;
+}
+.text-and-icon-topList {
+  position: relative;
+}
+
+.text-and-icon-image1 {
+  position: absolute;
+  top: 80px;
+  right: 0;
 }
