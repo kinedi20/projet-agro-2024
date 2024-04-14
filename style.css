@@ -13,12 +13,17 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   padding: 10px;
   background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: rgb(114, 31, 197) solid;
+  box-shadow: 10px 10px 5px #ccccce;
+  /* border: rgb(114, 31, 197) solid; */
 }
 
 .nav-left-container {
@@ -58,7 +63,7 @@ nav {
   height: 42px;
 }
 header {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   display: flex;
   background: white;
 }
@@ -67,6 +72,11 @@ header {
 }
 .header-left h3 {
   color: #11835c;
+  padding-bottom: 23px;
+}
+.header-left p {
+  padding: 32px 1px;
+  white-space: nowrap;
 }
 .header-left button {
   background: #11835c;
@@ -76,16 +86,24 @@ header {
   border-radius: 5px;
 }
 .header-right {
-  width: 80%;
-  background-image: url("./pictures/image-header.jpeg");
-  background-size: cover;
+  width: 100%;
+  position: relative;
+  /* background-image: url("./pictures/image-header.jpeg");
+  background-size: cover; */
 }
 #img-header {
-  width: 75%;
+  width: 717px;
+  position: absolute;
+  object-fit: cover;
+  mix-blend-mode: screen;
+  height: 717px;
+}
+#images-template {
+  width: 717px;
 }
 .trans-agro {
   padding: 15px 65px;
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   display: flex;
   height: 500px;
 
@@ -140,12 +158,12 @@ header {
   }
 }
 .products {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   padding: 5px;
 }
 .products-title {
   color: #11835c;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -205,7 +223,7 @@ header {
   background: url(./pictures/background-temoignage.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
 }
 .temoignage-container {
   background: #0d0404b0;
@@ -213,6 +231,7 @@ header {
 .temoignage h3 {
   color: white;
   text-align: center;
+  padding-top: 14px;
 }
 .temoignage-para {
   color: white;
@@ -235,8 +254,7 @@ header {
   width: 26%;
   margin-top: 50px;
 }
-.temoignage-item-title {
-}
+
 .temoignage-item img {
   border-radius: 92px;
   width: 150px;
@@ -255,7 +273,7 @@ header {
 }
 
 .text-and-icon {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
 }
 .text-and-icon-topList {
   display: flex;
@@ -291,8 +309,6 @@ header {
   width: 125%;
 }
 
-.text-and-icon-bottom-text p {
-}
 .text-and-icon-bottom-image4 {
   width: 100%;
 }
@@ -309,7 +325,7 @@ header {
 }
 
 .text-and-submit {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   background: linear-gradient(rgba(10, 10, 10, 0.52), rgba(0, 0, 0, 0.56)),
     url(./pictures/background-after-text-icon.jpeg);
   background-repeat: no-repeat;
@@ -337,7 +353,7 @@ header {
   border-radius: 5px;
 }
 .service {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
 }
 .service h3 {
   color: #11835c;
@@ -378,7 +394,7 @@ header {
 }
 
 .contact {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   background: linear-gradient(rgba(10, 10, 10, 0.52), rgba(0, 0, 0, 0.56)),
     url(./pictures/background-contact.jpeg);
   background-repeat: no-repeat;
@@ -389,6 +405,7 @@ header {
   font-weight: 700;
   text-align: center;
   margin: 21px 0px;
+  padding-top: 13px;
 }
 .contact-container {
   display: flex;
@@ -398,6 +415,7 @@ header {
   gap: 25px;
   margin-top: 90px;
   margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 #id-input1 {
   width: 600px;
@@ -418,7 +436,7 @@ header {
   color: white;
 }
 .infos {
-  border: rebeccapurple solid;
+  /* border: rebeccapurple solid; */
   margin-top: 25px;
   background: black;
   color: white;
