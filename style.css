@@ -180,16 +180,17 @@ header {
 }
 
 .products-item {
-  border: white solid;
-  border-radius: 5px;
+  border: #eee solid;
+  border-radius: 17px;
   background: #f2f2f2;
   margin-left: 12px;
   display: flex;
   flex-direction: column;
-  width: 199px;
-  height: 249px;
+  width: 209px;
+  height: 280px;
   align-items: center;
   box-shadow: 5px 5px 5px 5px #bfc0c5;
+  position: relative;
 }
 
 .products-item-img {
@@ -198,6 +199,7 @@ header {
 }
 .products-item-img img {
   width: 100px;
+  height: 136px;
   padding-top: 8px;
 }
 .products-item small {
@@ -210,13 +212,17 @@ header {
   content: "\f005";
   color: green;
 }
+.products-item-btn {
+  position: absolute;
+  bottom: 0;
+}
 .products-item-btn button {
   color: white;
   background: #11835c;
-  width: 201px;
-  height: 40px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 210px;
+  height: 45px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 
 .temoignage {
@@ -228,7 +234,7 @@ header {
 .temoignage-container {
   background: #0d0404b0;
 }
-.temoignage h3 {
+.temoignage h2 {
   color: white;
   text-align: center;
   padding-top: 14px;
@@ -266,10 +272,11 @@ header {
   padding: 17px;
 }
 .temoignage-item-text {
-  margin-left: 10px;
-  padding-left: 4px;
-  padding-bottom: 74px;
+  /* margin-left: 10px;
+  padding-left: 4px; */
+  padding-bottom: 60px;
   text-align: justify;
+  width: 88%;
 }
 
 .text-and-icon {
@@ -355,7 +362,7 @@ header {
 .service {
   /* border: rebeccapurple solid; */
 }
-.service h3 {
+.service h2 {
   color: #11835c;
   text-align: center;
   margin-top: 30px;
@@ -391,6 +398,7 @@ header {
 }
 .service-item p {
   margin-bottom: 50px;
+  padding-left: 20px;
 }
 
 .contact {
@@ -399,8 +407,9 @@ header {
     url(./pictures/background-contact.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 570px;
 }
-.contact h3 {
+.contact h2 {
   color: white;
   font-weight: 700;
   text-align: center;
@@ -448,7 +457,8 @@ header {
   width: 50%;
 }
 .infos-left h3 {
-  margin: 20px 80px;
+  margin: 20px 0px;
+  text-align: center;
 }
 .infos-left p {
   margin-bottom: 22px;
